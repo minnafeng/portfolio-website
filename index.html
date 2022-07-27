@@ -13,7 +13,7 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive Portfolio Website</title>
+        <title>Minna Feng</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -24,7 +24,7 @@
                <div class="nav__menu" id="nav-menu">
                   <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link"> <!-- active link on home by default before selection -->
                           <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
@@ -58,6 +58,9 @@
                </div>
 
                <div class="nav__btns">
+                  <!-- Theme change button -->
+                  <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                   <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                   </div>
@@ -149,7 +152,7 @@
             </section>
 
             <!--==================== EXPERIENCE ====================-->
-            <section class="experience section">
+            <section class="experience section" id="experience">
               <h2 class="section__title">Experience</h2>
               <span class="section__subtitle">My personal journey</span>
 
@@ -294,7 +297,7 @@
               <div class="footer__container container grid">
                   <div>
                     <h2 class="footer__title">Contact Me</h2>
-                    <span class="footer__subtitle">Let's get to know each other!</span>
+                    <span class="footer__subtitle">Come say hi!</span>
                   </div>
 
                   <div class="footer__socials">
@@ -312,7 +315,7 @@
                   </div>
               </div>
 
-              <p class="footer__copy">Created by Minna Feng </p>
+              <p class="footer__copy">Created by Minna Feng © 2022 </p>
           </div>
         </footer>
         

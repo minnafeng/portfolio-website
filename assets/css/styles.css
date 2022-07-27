@@ -70,10 +70,34 @@
 }
 
 /*========== Variables Dark theme ==========*/
-
+body.dark-theme{
+  /* HSL dark color mode (modified relevant vars) */
+  --first-color-second: hsl(var(--hue-color), 30%, 8%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --container-color: hsl(var(--hue-color), 29%, 16%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
 
 /*========== Button Dark/Light ==========*/
+.nav__btns{
+  display: flex;
+  align-items: center;
+}
 
+.change-theme{
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.change-theme:hover{
+  color: var(--first-color);
+}
 
 /*==================== BASE ====================*/
 * {
@@ -242,10 +266,14 @@ img {
 
 
 /* Active link */
-
+.active-link{
+  color: var(--first-color);
+}
 
 /* Change background header */
-
+.scroll-header{
+  box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+}
 
 /*==================== HOME ====================*/
 .home__container{
@@ -468,16 +496,16 @@ img {
 }
 
 .footer__socials{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  row-gap: 1rem;
   text-align: center;
+  font-size: x-large;
+  
 }
 
 .footer__socials-icon{
   font-size: 1.25 rem;
   text-align: center;
   padding-bottom:25px;
+  margin: 30px;
 }
 
 .footer__socials-icon:hover{
@@ -527,7 +555,20 @@ img {
 }
 
 /*========== SCROLL BAR ==========*/
+::-webkit-scrollbar{
+  width: .60rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: .5rem; 
+}
 
+::-webkit-scrollbar-thumb{
+  background-color: var(--scroll-thumb-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--text-color-light);
+}
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
