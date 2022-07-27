@@ -30,7 +30,7 @@
                     </li>
                     <li class="nav__item">
                       <a href="#about" class="nav__link">
-                        <i class="uil uil-user nav__icon"></i> About
+                        <i class="uil uil-user nav__icon"></i> About Me
                       </a>
                     </li>
                     <li class="nav__item">
@@ -71,75 +71,256 @@
             <section class="home section" id="home">
                 <div class="home__container container grid">
                   <div class="home__content grid">
-                    <div class="home__social">
-                      <a href="https://www.linkedin.com/in/minna-feng/" target="_blank" class="home__social-icon">
+                    <div class="home__socials">
+                      <a href="https://www.linkedin.com/in/minna-feng/" target="_blank" class="home__socials-icon">
                         <i class="uil uil-linkedin-alt"></i>
                       </a>
 
-                      <a href="mailto:minnafeng02@gmail.com" target="_blank" class="home__social-icon">
+                      <a href="mailto:minnafeng02@gmail.com" target="_blank" class="home__socials-icon">
                         <i class="uil uil-envelope-alt"></i>
                       </a>
 
-                      <a href="https://github.com/minnafeng" target="_blank" class="home__social-icon">
+                      <a href="https://github.com/minnafeng" target="_blank" class="home__socials-icon">
                         <i class="uil uil-github-alt"></i>
                       </a>
                     </div>
-
+                    
+                    <!-- what is going on here -->
                     <div class="home__img">
-                      
+                      <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            
+                            <image class="home__blob-img" x='12' y='18' href="assets/img/"/> <!-- x,y coords of img -->
+                        </g>
+                      </svg>
                     </div>
+
+                    <!-- to here -->
+
+                    <div class="home__data">
+                      <h1 class="home__title">Hi, I'm Minna</h1>
+                      <h3 class="home__subtitle">Computer Science Student</h3>
+                      <p class="home__description">Description</p>
+                      <a href="#contact" class="button button--flex">
+                        Contact Me <i class="uil uil-message button__icon"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                      <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                      <span class="home__scroll-name">Scroll down</span>
+                      <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
                   </div>
                 </div>
             </section>
 
-            <!--==================== ABOUT ====================-->
+            <!--==================== ABOUT ME====================-->
             <section class="about section" id="about">
-                
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My introduction</span>
+
+                <div class="about__container container grid">
+                  <img src="assets/img/about.png" alt="" class="about__img">
+
+                  <div class="about__data">
+                    <p class="about__description">Description</p>
+                  </div>
+                </div>
             </section>
 
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
+              <h2 class="section__title">Skills</h2>
+              <span class="section__subtitle">My technical level</span>
 
             </section>
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
+            <!--==================== EXPERIENCE ====================-->
+            <section class="experience section">
+              <h2 class="section__title">Experience</h2>
+              <span class="section__subtitle">My personal journey</span>
 
+              <div class="experience__container container">
+                <div class="experience__tabs">
+                  <div class="experience__type button--flex">
+                    <i class="uil uil-graduation-cap experience__icon"></i>
+                    Education
+                  </div>
+
+                  <div class="experience__type button--flex">
+                    <i class="uil uil-briefcase-alt experience__icon"></i>
+                    Work
+                  </div>
+                </div>
+
+                <div class="experience__sections">
+                  <!--==================== EXPERIENCE CONTENT 1 ====================-->
+                  <div class="experience__content">
+                    <!--==================== EXPERIENCE 1 ====================-->
+                    <div class="experience__data">
+                      <div></div>
+
+                      <div>
+                        <span class="experience__rounder"></span>
+                        <span class="experience__line"></span>
+                      </div>
+
+                      <div>
+                        <h3 class="experience__title">System Operations Intern</h3>
+                        <span class="experience__subtitle">Bell Canada</span>
+                        <div class="experience__calendar">
+                          <i class="uil uil-calendar-alt"></i>
+                          May 2022 - Aug 2022
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--==================== EXPERIENCE 2 ====================-->
+                    <div class="experience__data">
+         
+                      <div>
+                        <h3 class="experience__title">Computer Science</h3>
+                        <span class="experience__subtitle">McGill University</span>
+                        <div class="experience__calendar">
+                          <i class="uil uil-calendar-alt"></i>
+                          Sept 2021 - May 2024
+                        </div>
+                      </div>
+
+                      <div>
+                        <span class="experience__rounder"></span>
+                        <span class="experience__line"></span>
+                      </div>
+                    </div>
+
+                    <!--==================== EXPERIENCE 3 ====================-->
+                    <div class="experience__data">
+                      <div></div>
+
+                      <div>
+                        <span class="experience__rounder"></span>
+                        <span class="experience__line"></span>
+                      </div>
+
+                      <div>
+                        <h3 class="experience__title">Tech Sales Associate</h3>
+                        <span class="experience__subtitle">The Source</span>
+                        <div class="experience__calendar">
+                          <i class="uil uil-calendar-alt"></i>
+                          July 2021 - Apr 2022
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--==================== EXPERIENCE 4 ====================-->
+                    <div class="experience__data">
+                      <div></div>
+
+                      <div>
+                        <span class="experience__rounder"></span>
+                        <span class="experience__line"></span>
+                      </div>
+
+                      <div>
+                        <h3 class="experience__title">Programming Course Grader</h3>
+                        <span class="experience__subtitle">Marianopolis College</span>
+                        <div class="experience__calendar">
+                          <i class="uil uil-calendar-alt"></i>
+                          Jan 2021 - Jun 2021
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--==================== EXPERIENCE 5 ====================-->
+                    <div class="experience__data">
+                      <div>
+                        <h3 class="experience__title">Pure and Applied Science</h3>
+                        <span class="experience__subtitle">Marianopolis College</span>
+                        <div class="experience__calendar">
+                          <i class="uil uil-calendar-alt"></i>
+                          Aug 2019 - Jun 2021
+                        </div>
+                      </div>
+
+                      <div>
+                        <span class="experience__rounder"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Download CV Button -->
+              <div class="experience__button">
+                <a download="" href="assets/pdf/Minna Feng - Resume 2.pdf" class="button button--flex">
+                  Download CV <i class="uil uil-download-alt button__icon"></i>
+                </a>
+              </div>
             </section>
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
+            <!--==================== PROJECTS ====================-->
+            <section class="projects section" id="projects">
+                <h2 class="section__title">Projects</h2>
+                <span class="section__subtitle">Most recent work</span>
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                
-            </section>
+                <div class="projects__container container grid">
+                  <!--==================== PROJECT 1 ====================-->
+                  <div class="projects__content">
+                    <div>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
+                    </div>
+                  </div>
 
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-
+                </div>
             </section>
         </main>
 
         <!--==================== FOOTER ====================-->
-        <footer class="footer">
-         
+        <footer class="footer" id="contact">
+          <div class="footer__bg"> <!--background-->
+              <div class="footer__container container grid">
+                  <div>
+                    <h2 class="footer__title">Contact Me</h2>
+                    <span class="footer__subtitle">Let's get to know each other!</span>
+                  </div>
+
+                  <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/minna-feng/" target="_blank" class="footer__socials-icon">
+                      <i class="uil uil-linkedin-alt"></i>
+                    </a>
+
+                    <a href="mailto:minnafeng02@gmail.com" target="_blank" class="footer__socials-icon">
+                      <i class="uil uil-envelope-alt"></i>
+                    </a>
+
+                    <a href="https://github.com/minnafeng" target="_blank" class="footer__socials-icon">
+                      <i class="uil uil-github-alt"></i>
+                    </a>
+                  </div>
+              </div>
+
+              <p class="footer__copy">Created by Minna Feng </p>
+          </div>
         </footer>
         
-        <!--==================== SCROLL TOP ====================-->
+        <!--==================== SCROLL UP ====================-->
         
+        <a href="#" class="scrollup" id="scroll-up">
+          <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
 
         <!--==================== SWIPER JS ====================-->
         <script src=""></script>
