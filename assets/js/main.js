@@ -34,20 +34,25 @@ function linkAction(){
 
 navLink.forEach(n => n.addEventListener('click', linkAction)) // arrow function when single statement
 
-/*==================== ACCORDION SKILLS ====================*/
+/*==================== MIXITUP FILTER PROJECTS ====================*/
+let mixerProjects = mixitup('.projects__container', {
+  selectors: {
+      target: '.projects__card'
+  },
+  animation: {
+      duration: 300
+  }
+});
 
+/* link active projects WHY DOESNT THIS WORK*/
+const linkProjects = document.querySelectorAll('.projects__item')
 
-/*==================== QUALIFICATION TABS ====================*/
+function activeProjects(){
+  linkProjects.forEach(l=> l.classList.remove('active-projects'))
+  this.classlist.add('active-projects')
+}
 
-
-/*==================== SERVICES MODAL ====================*/
-
-
-/*==================== PORTFOLIO SWIPER  ====================*/
-
-
-/*==================== TESTIMONIAL ====================*/
-
+linkProjects.forEach(l=> l.addEventListener('click', activeProjects))
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 // Icon in menu is highlighted when scrolled to that section
@@ -117,3 +122,17 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*==================== SCROLL REVEAL ANIMATION ====================*/ 
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  // reset: true
+})
+
+sr.reveal(`.home__data`)
+sr.reveal(`.home__img`, {delay: 700})
+sr.reveal(`.home__socials, .home__scroll`, {delay: 900, origin: 'bottom'})

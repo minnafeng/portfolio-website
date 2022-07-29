@@ -1,11 +1,11 @@
 # portfolio-website-v1
 
 To complete:
-- Skills section
-- Projects section
+- Projects section: fix link active projects
 - Improve responsiveness
 - Improve timeline https://www.w3schools.com/howto/howto_css_timeline.asp 
-- Finish about me
+- Finish writing about me
+- Clicking out of the menu closes the menu
 
 Extras:
 - Animated background
@@ -13,3 +13,6 @@ Extras:
 - French translation button
 - Theme change buttons
 - Music button
+
+Colours:
+https://colors.dopely.top/color-pedia 
