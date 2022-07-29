@@ -11,7 +11,7 @@
     --hue-color: 38; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 57%, 74%); /* 69 61 */
+    --first-color: hsl(var(--hue-color), 40%, 74%); /* 69 61 */
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -20,7 +20,7 @@
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #fff;
+    --container-color: hsl(var(--hue-color), 35%, 90%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
@@ -72,7 +72,7 @@
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
-  /* HSL dark color mode (modified relevant vars) */
+  /* HSL dark color mode (relevant variables modified) */
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
@@ -369,6 +369,7 @@ img {
   padding: 1rem;
   border-radius: .5rem; /* rounds edges */
   font-weight: var(--font-medium);
+  transition: .4s;
 }
 
 .button:hover{
@@ -400,7 +401,56 @@ img {
 
 
 /*==================== SKILLS ====================*/
+.skills__container{
+  row-gap: 2rem;
+  padding-top: 1rem;
+}
 
+.skills__content{
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+}
+
+.skills__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.skills__box{
+  display: flex;
+  justify-content: center;
+  column-gap: 2.5rem;
+}
+
+.skills__group{
+  display: grid;
+  align-content: flex-start;
+  row-gap: 1rem;
+}
+
+.skills__data{
+  display: flex;
+  column-gap: .5rem;
+}
+
+.skills .uil-shield-check{
+  font-size: 1rem;
+  color: var(--first-color);
+}
+
+.skills__name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 18px;
+}
+
+.skills__level{
+  font-size: var(--smaller-font-size);
+}
 
 /*==================== EXPERIENCE ====================*/
 .experience__tabs{
@@ -603,6 +653,7 @@ img {
     gap: .5rem;
   }
 
+  
   /*
   .project__img{
     width: 200px;
