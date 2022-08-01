@@ -160,7 +160,7 @@ img {
 
 /*==================== LAYOUT ====================*/
 .container {
-  max-width: 768px;
+  max-width: 768px; 
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -181,7 +181,7 @@ img {
 
 /*==================== NAV ====================*/
 .nav{
-  max-width: 968px;
+  max-width: 968px; 
   height: var(--header-height);
   display: flex; /* ? */
   justify-content: space-between;
@@ -278,6 +278,7 @@ img {
 
 /*==================== HOME ====================*/
 .home__container{
+  max-width: 800px;
   gap: 1rem;
 }
 
@@ -285,6 +286,7 @@ img {
   grid-template-columns: .5fr 3fr;
   padding-top: 3.5rem;
   align-items: center;
+  column-gap: 0;
 }
 
 .home__socials{
@@ -317,13 +319,14 @@ img {
 
 .home__title{
   font-size: var(--big-font-size);
+  margin-bottom: 1rem;
 }
 
 .home__subtitle{
   font-size: var(--h3-font-size);
   color: var(--text-color);
   font-weight: var(--font-medium);
-  margin-bottom: var(--mb-0-75);
+  margin-bottom: 2rem;
 }
 
 .home__description{
@@ -844,7 +847,7 @@ img {
 
     .home__content{
       padding-top: 5.5rem;
-      column-gap: 2rem;
+      /*column-gap: 2rem; */
     }
 
     .name__blob{
@@ -857,7 +860,7 @@ img {
     }
 
     .home__scroll-button{
-      margin-left: 3rem;
+      margin-left: 1rem;
     }
 
     .about__container{
@@ -932,7 +935,7 @@ img {
   }
 
   .home__socials{
-    transform: translateX(-6rem);
+    transform: translateX(-5rem);
   }
 
   .home__scroll{
