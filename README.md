@@ -9,6 +9,10 @@ To complete:
 
 Extras:
 - Animated background
+https://www.sliderrevolution.com/resources/css-animated-background/
+https://www.w3schools.com/css/css3_animations.asp
+https://freefrontend.com/css-animated-backgrounds/
+
 - Animation on objects as you scroll
 - French translation button
 - Theme change buttons
