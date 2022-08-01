@@ -136,3 +136,14 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data`)
 sr.reveal(`.home__img`, {delay: 700})
 sr.reveal(`.home__socials, .home__scroll`, {delay: 900, origin: 'bottom'})
+
+sr.reveal(`.about__img`, {origin: 'left', duration: 1000, delay: 0})
+sr.reveal(`.about__data`, {origin: 'right', duration: 1000, delay: 0})
+
+/*==================== TYING TEXT ANIMATION ====================*/
+var typed = new Typed(".typing",{
+  strings: ["developer.", "creative writer.", "dedicated learner.", "problem solver.", "positive thinker."],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true
+})
