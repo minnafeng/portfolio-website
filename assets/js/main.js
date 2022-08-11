@@ -140,7 +140,7 @@ sr.reveal(`.home__socials, .home__scroll`, {delay: 900, origin: 'bottom'})
 sr.reveal(`.about__img`, {origin: 'left', duration: 1000, delay: 0})
 sr.reveal(`.about__data`, {origin: 'right', duration: 1000, delay: 0})
 
-/*==================== TYING TEXT ANIMATION ====================*/
+/*==================== TYPING TEXT ANIMATION ====================*/
 var typed = new Typed(".typing",{
   strings: ["developer.", "creative writer.", "dedicated learner.", "problem solver.", "positive thinker."],
   typeSpeed: 100,
