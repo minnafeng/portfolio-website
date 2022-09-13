@@ -153,6 +153,11 @@ img {
   margin-bottom: var(--mb-3);
 }
 
+.construction{
+  color: orange;
+  font-size: var(--font-medium);
+}
+
 .section__title, 
 .section__subtitle {
   text-align: center;
